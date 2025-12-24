@@ -19,10 +19,10 @@ const Home = () => {
                         </div>
 
                         <h1>
-                            Lelang <span className="highlight">Digital</span> dengan
-                            Teknologi <span className="highlight">Blockchain</span>
+                            Lelang <span className="highlight">Digital</span>
+                            <span className="highlight"> Blockchain</span>
                         </h1>
-
+ 
                         <p className="hero-desc">
                             Transaksi aman, transparan, dan tidak dapat dimanipulasi.
                             Semua bid tercatat permanen di Ethereum blockchain.

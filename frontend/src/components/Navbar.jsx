@@ -20,7 +20,7 @@ const Navbar = () => {
             <div className="navbar-brand">
                 <Link to="/">
                     <Zap size={20} />
-                    Sistem Lelang Web3
+                    Rapz Auction Web3
                 </Link>
             </div>
 
