@@ -1,0 +1,124 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 32px;
+    background: rgba(10, 10, 15, 0.8);
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid var(--border);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-brand a {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--text-primary);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.navbar-menu {
+    display: flex;
+    gap: 32px;
+}
+
+.navbar-link {
+    color: var(--text-secondary);
+    font-size: 14px;
+    font-weight: 500;
+    transition: color 0.2s;
+    position: relative;
+}
+
+.navbar-link:hover {
+    color: var(--text-primary);
+}
+
+.navbar-link::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--primary);
+    transition: width 0.2s;
+}
+
+.navbar-link:hover::after {
+    width: 100%;
+}
+
+.navbar-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.wallet-info {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 14px;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+}
+
+.wallet-address {
+    color: var(--primary-light);
+    font-family: 'SF Mono', 'Courier New', monospace;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.username {
+    color: var(--text-primary);
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.admin-badge {
+    padding: 4px 10px;
+    background: linear-gradient(135deg, var(--secondary) 0%, #db2777 100%);
+    border-radius: 20px;
+    color: white;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Mobile */
+@media (max-width: 900px) {
+    .navbar {
+        padding: 12px 16px;
+    }
+
+    .navbar-menu {
+        display: none;
+    }
+
+    .wallet-address {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .navbar-actions {
+        gap: 8px;
+    }
+
+    .username {
+        display: none;
+    }
+}

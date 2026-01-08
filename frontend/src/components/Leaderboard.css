@@ -1,0 +1,126 @@
+.leaderboard {
+    padding: 1.5rem;
+    background: linear-gradient(135deg, rgba(26, 26, 46, 0.9) 0%, rgba(22, 33, 62, 0.9) 100%);
+    border-radius: 16px;
+    border: 1px solid rgba(102, 126, 234, 0.2);
+}
+
+.leaderboard-title {
+    color: #fff;
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.leaderboard-title::before {
+    content: '🏆';
+}
+
+.leaderboard-empty {
+    color: #718096;
+    text-align: center;
+    padding: 2rem;
+}
+
+.leaderboard-stats {
+    margin-bottom: 1rem;
+}
+
+.stat-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.75rem;
+    background: rgba(102, 126, 234, 0.1);
+    border-radius: 8px;
+}
+
+.stat-label {
+    color: #a0aec0;
+    font-size: 0.875rem;
+}
+
+.stat-value {
+    color: #667eea;
+    font-weight: 600;
+}
+
+.leaderboard-items {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.leaderboard-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.leaderboard-item.highest {
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.2) 0%, rgba(118, 75, 162, 0.2) 100%);
+    border: 1px solid rgba(102, 126, 234, 0.3);
+}
+
+.leaderboard-item.lowest {
+    background: rgba(113, 128, 150, 0.1);
+    border: 1px solid rgba(113, 128, 150, 0.2);
+}
+
+.rank-badge {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-weight: 700;
+    font-size: 0.875rem;
+}
+
+.highest .rank-badge {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #fff;
+}
+
+.lowest .rank-badge {
+    background: #718096;
+    color: #fff;
+}
+
+.bidder-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.bidder-label {
+    font-size: 0.75rem;
+    color: #718096;
+    text-transform: uppercase;
+}
+
+.bidder-address {
+    font-family: monospace;
+    color: #e2e8f0;
+}
+
+.bid-amount {
+    text-align: right;
+}
+
+.bid-amount .amount {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+.bid-amount .currency {
+    font-size: 0.75rem;
+    color: #667eea;
+    margin-left: 0.25rem;
+}

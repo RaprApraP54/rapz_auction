@@ -1,0 +1,119 @@
+.bid-form {
+    padding: 1.5rem;
+    background: linear-gradient(135deg, rgba(26, 26, 46, 0.9) 0%, rgba(22, 33, 62, 0.9) 100%);
+    border-radius: 16px;
+    border: 1px solid rgba(102, 126, 234, 0.2);
+}
+
+.bid-form-title {
+    color: #fff;
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.bid-form-warning {
+    color: #ed8936;
+    text-align: center;
+    padding: 1rem;
+}
+
+.bid-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.bid-info-item {
+    display: flex;
+    flex-direction: column;
+    padding: 0.75rem;
+    background: rgba(102, 126, 234, 0.1);
+    border-radius: 8px;
+}
+
+.bid-info-label {
+    font-size: 0.75rem;
+    color: #718096;
+    text-transform: uppercase;
+    margin-bottom: 0.25rem;
+}
+
+.bid-info-value {
+    font-size: 1rem;
+    color: #e2e8f0;
+    font-weight: 600;
+}
+
+.bid-info-value.highlight {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.bid-input {
+    width: 100%;
+    padding: 1rem;
+    padding-right: 4rem;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(102, 126, 234, 0.3);
+    border-radius: 8px;
+    color: #fff;
+    font-size: 1.125rem;
+    transition: border-color 0.3s ease;
+}
+
+.bid-input:focus {
+    outline: none;
+    border-color: #667eea;
+}
+
+.bid-input::placeholder {
+    color: #718096;
+}
+
+.input-suffix {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #667eea;
+    font-weight: 600;
+}
+
+.bid-error {
+    color: #f5576c;
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+    padding: 0.75rem;
+    background: rgba(245, 87, 108, 0.1);
+    border-radius: 8px;
+}
+
+.bid-success {
+    color: #48bb78;
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+    padding: 0.75rem;
+    background: rgba(72, 187, 120, 0.1);
+    border-radius: 8px;
+}
+
+.bid-submit {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+}
+
+.bid-disclaimer {
+    margin-top: 1rem;
+    font-size: 0.75rem;
+    color: #718096;
+    line-height: 1.5;
+}

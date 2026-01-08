@@ -1,0 +1,41 @@
+.wallet-required {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+    padding: 2rem;
+}
+
+.wallet-required-content {
+    text-align: center;
+    padding: 3rem;
+    background: linear-gradient(135deg, rgba(26, 26, 46, 0.9) 0%, rgba(22, 33, 62, 0.9) 100%);
+    border-radius: 20px;
+    border: 1px solid rgba(102, 126, 234, 0.3);
+    max-width: 400px;
+}
+
+.wallet-icon {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.wallet-required-content h2 {
+    color: #fff;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.wallet-required-content p {
+    color: #a0aec0;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.error-message {
+    color: #f5576c;
+    margin-bottom: 1rem;
+    padding: 0.75rem;
+    background: rgba(245, 87, 108, 0.1);
+    border-radius: 8px;
+}
